@@ -1,9 +1,19 @@
 package entity;
 
+
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import javax.annotation.processing.Generated;
 import javax.persistence.*;
 
 @Entity
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class Book {
 
 
@@ -33,6 +43,12 @@ public class Book {
     * será nossa chave estrangeira.
     */
     @ManyToOne(fetch = FetchType.LAZY, cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REMOVE}) //Mapeamento para relacionamento de Muitos para Um
-    @JoinColumn //Qual atributo irá fazer o relacionamento, neste caso é o autor.
-    public   Author author_id;
+    @JoinColumn (name = "author_id")//Qual atributo irá fazer o relacionamento, neste caso é o autor.
+    private  Author author; //Declando Author do tipo Objeto
+
+
+    public void Author(){
+        author.getName();
+    }
+
 }
