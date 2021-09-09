@@ -46,10 +46,4 @@ public class Book {
     @JoinColumn (name = "author_id")//Qual atributo irá fazer o relacionamento, neste caso é o autor.
     private  Author author; //Declando Author do tipo Objeto
 
-
-    public void Author(){
-        author.getName();
-    }
-
-
 }
