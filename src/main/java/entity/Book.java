@@ -46,4 +46,8 @@ public class Book {
     @JoinColumn (name = "author_id")//Qual atributo irá fazer o relacionamento, neste caso é o autor.
     private  Author author; //Declando Author do tipo Objeto
 
+    //Metodo get para pegarmos o id em nossa classe Controller
+    public Long getId() {
+        return id;
+    }
 }
