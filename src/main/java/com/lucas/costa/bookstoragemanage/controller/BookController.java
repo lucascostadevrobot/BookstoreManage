@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController //Informa ao Spring que essa classe representa uma Classe Controller.
 @RequestMapping("/api/v1/books") //Indicamos um Endpoint onde iremos fazer o acesso a este controller.
 
-public class Controller {
+public class BookController {
 
 
     /*Abaixo Realizaremos uma injeção de depêndencias através
@@ -21,7 +21,7 @@ public class Controller {
     private BookRepository bookRepository;
 
     @Autowired //Realiza injeção de depêndencias de um atributo dentor do nosso método
-    public Controller(BookRepository bookRepository) {
+    public BookController(BookRepository bookRepository) {
         this.bookRepository = bookRepository;
     }
 

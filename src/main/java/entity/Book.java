@@ -7,10 +7,10 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.annotation.processing.Generated;
 import javax.persistence.*;
 
 @Entity
+@Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
@@ -47,7 +47,8 @@ public class Book {
     private  Author author; //Declando Author do tipo Objeto
 
     //Metodo get para pegarmos o id em nossa classe Controller
-    public Long getId() {
-        return id;
-    }
+
+
+
+
 }

@@ -27,7 +27,9 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
-@Entity
+
+
+
 @Data //Automaticamente Gaters e Seters e usas utilizações
 @Builder //Automatico  classe nos padrões projeto Builders utilizado para construção de objetos seguros
 @NoArgsConstructor //Automatico construtures
