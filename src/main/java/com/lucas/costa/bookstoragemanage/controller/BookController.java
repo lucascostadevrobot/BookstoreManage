@@ -1,7 +1,7 @@
 package com.lucas.costa.bookstoragemanage.controller;
 
 import com.lucas.costa.bookstoragemanage.controller.dto.MessageResponseDTO;
-import com.lucas.costa.bookstoragemanage.repository.BookRepository;
+import com.lucas.costa.bookstoragemanage.service.BookService;
 import entity.Book;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -18,11 +18,11 @@ public class BookController {
     /*Abaixo Realizaremos uma injeção de depêndencias através
      das Anotações do SpringBoot dentro da nossa Classe Controladora
      */
-    private BookRepository bookRepository;
+    private final BookService bookService;
 
-    @Autowired //Realiza injeção de depêndencias de um atributo dentor do nosso método
-    public BookController(BookRepository bookRepository) {
-        this.bookRepository = bookRepository;
+    @Autowired
+    public BookController(BookService bookService) {
+        this.bookService = bookService;
     }
 
     /*
@@ -34,9 +34,7 @@ public class BookController {
 
     @PostMapping
     public MessageResponseDTO create(@RequestBody Book book){
-        Book savedBook = bookRepository.save(book); //Salva nosso book
-        return MessageResponseDTO.builder()
-                .message("Book Criado com o ID" + savedBook.getId())
-                .build();
+        //Iremos delegar esse método para nossa classe de Serviços
+        return bookService.create(book);
     }
 }
