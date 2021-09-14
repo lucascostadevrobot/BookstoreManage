@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController //Informa ao Spring que essa classe representa uma Classe Controller.
-@RequestMapping("/api/v1/books") //Indicamos um Endpoint onde iremos fazer o acesso a este controller.
+@RequestMapping("/api/v1/books")  //Indicamos um Endpoint onde iremos fazer o acesso a este controller.
 
 public class BookController {
 
