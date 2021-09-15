@@ -1,5 +1,19 @@
 package entity;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+
 /*
 * 1- Realizar a criação do pacote entity
 * 2- Criar uma classe java de acordo com o UML
@@ -18,19 +32,8 @@ sincronização de instancias e registros durante o tempo de execução.
 *
 *
 * */
-
-
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
-import javax.persistence.*;
-
-
-
-
-@Data //Automaticamente Gaters e Seters e usas utilizações
+@Entity
+@Data//Automaticamente Gaters e Seters e usas utilizações
 @Builder //Automatico  classe nos padrões projeto Builders utilizado para construção de objetos seguros
 @NoArgsConstructor //Automatico construtures
 @AllArgsConstructor

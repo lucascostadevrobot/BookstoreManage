@@ -7,7 +7,16 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.*;
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+
 
 @Entity
 @Data
@@ -21,7 +30,7 @@ public class Book {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private  Long id;
 
-    @Column (nullable = false, unique = true)
+    @Column(nullable = false, unique = true)
     private  String name;
 
     @Column (nullable = false)
@@ -46,7 +55,8 @@ public class Book {
     @JoinColumn (name = "author_id")//Qual atributo irá fazer o relacionamento, neste caso é o autor.
     private  Author author; //Declando Author do tipo Objeto
 
-    //Metodo get para pegarmos o id em nossa classe Controller
+
+
 
 
 
