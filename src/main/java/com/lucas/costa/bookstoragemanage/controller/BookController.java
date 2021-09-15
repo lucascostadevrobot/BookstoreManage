@@ -1,6 +1,6 @@
 package com.lucas.costa.bookstoragemanage.controller;
 
-import com.lucas.costa.bookstoragemanage.controller.dto.MessageResponseDTO;
+import com.lucas.costa.bookstoragemanage.dto.MessageResponseDTO;
 import com.lucas.costa.bookstoragemanage.service.BookService;
 import com.lucas.costa.bookstoragemanage.entity.Book;
 import org.springframework.beans.factory.annotation.Autowired;

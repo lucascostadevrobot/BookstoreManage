@@ -1,4 +1,4 @@
-package com.lucas.costa.bookstoragemanage.controller.dto;
+package com.lucas.costa.bookstoragemanage.dto;
 
 /*Após criar a nossa Classe DTO precisamos criar um atributo do tipo String.
  * Precisamos injetar nossas anotações Lomnok
