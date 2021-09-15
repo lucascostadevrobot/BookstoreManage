@@ -16,6 +16,14 @@ public class BookDTO {
 
     private String name;
 
+    private Integer pages;
 
-    private Integer age;
+    private Integer chapters;
+
+    private  String isbn;
+
+    private String publisherName;
+
+    private AuthorDTO authorDTO;
+
 }

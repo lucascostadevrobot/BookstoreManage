@@ -14,15 +14,10 @@ public class AuthorDTO {
     private Long id;
 
 
+
     private String name;
 
-    private Integer pages;
 
-    private Integer chapters;
+    private Integer age;
 
-    private  String isbn;
-
-    private String publisherName;
-
-    private AuthorDTO authorDTO;
 }
