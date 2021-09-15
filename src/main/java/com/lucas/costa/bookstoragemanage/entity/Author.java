@@ -1,4 +1,4 @@
-package entity;
+package com.lucas.costa.bookstoragemanage.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -15,7 +15,7 @@ import javax.persistence.Id;
 
 
 /*
-* 1- Realizar a criação do pacote entity
+* 1- Realizar a criação do pacote com.lucas.costa.bookstoragemanage.entity
 * 2- Criar uma classe java de acordo com o UML
 * 3- Criar os atributos do modelo
 * 4- Fazer o mapeamento da classe com as anotações JPA
