@@ -16,8 +16,24 @@
 	<properties>
 		<java.version>11</java.version>
 	</properties>
+
+
+
 	<!--Incializando dependências do Spring Boot-->
 	<dependencies>
+
+		<!-- https://mvnrepository.com/artifact/org.hibernate.validator/hibernate-validator -->
+		<dependency>
+			<groupId>org.hibernate.validator</groupId>
+			<artifactId>hibernate-validator</artifactId>
+			<version>7.0.1.Final</version>
+		</dependency>
+
+
+
+
+
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
@@ -50,11 +66,14 @@
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
-		</dependency>
+
+
+
+
+
+
 	</dependencies>
+
 	<!--Finalizando as dependências do Spring Boot-->
 
 	<build>
